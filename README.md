@@ -23,5 +23,5 @@ vue2.x + vue-router + vues + es6 + axios + webpack
 启动应用：npm run dev（可在pageage.json里配置）
 
 ## 目录结构
-```
+> addd
 
