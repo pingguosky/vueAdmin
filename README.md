@@ -25,6 +25,11 @@ vue-cli + vue2.x + vue-router + vuex + es6 + axios + webpack
 
 启动应用：npm run dev（可在pageage.json里配置）
 
+## vuex
+* 每次修改状态都要通过vuex的Mutations提交，Mutations方法名官方建议大写
+* vuex状态管理暂时按功能划分，也可全局设置
+* 注：通过mutations可以清晰的看到状态是怎么变的，可预测
+
 ## 目录结构
 ```
 ├── build                       // webpack配置相关
@@ -54,11 +59,6 @@ vue-cli + vue2.x + vue-router + vuex + es6 + axios + webpack
 ├── index.html                  // 入口html文件
 ├── package.json                // 项目描述和配置
 ```
-## vuex
-* 每次修改状态都要通过vuex的Mutations提交，Mutations方法名官方建议大写
-* vuex状态管理暂时按功能划分，也可全局设置
-* 注：通过mutations可以清晰的看到状态是怎么变的，可预测
-
 
 ## 说明
 1. axios —— 基于 Promise 的 HTTP 请求客户端，可同时在浏览器和 Node.js 中使用。这里在utils中封装fetch.js（这个js暂时没写，后期完善。 引用axios模块），
@@ -69,8 +69,11 @@ vue-cli + vue2.x + vue-router + vuex + es6 + axios + webpack
 3. 模块划分（webpack懒加载）应该在总路由完成（暂时没写上去），这样打包压缩会把资源按模块分类
 
 ### 资料参考
-vue chrome插件（非常）：vue.js devtools
+vue chrome插件（非常好用，可时间穿梭，查看vuex变化，可通过component查看结构等）：vue.js devtools
 
+基于vue2.0的组件库：http://element.eleme.io/#/zh-CN
+饿了么：https://github.com/bailicangdu/vue2-elm
+github Vue大集合：https://github.com/opendigg/awesome-github-vue#UI%E7%BB%84%E4%BB%B6
 
 
 
