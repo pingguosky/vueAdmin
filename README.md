@@ -62,7 +62,7 @@ vue-cli + vue2.x + vue-router + vuex + es6 + axios + webpack
 
 ## 说明
 1. axios —— 基于 Promise 的 HTTP 请求客户端，可同时在浏览器和 Node.js 中使用。这里在utils中封装fetch.js（这个js暂时没写，后期完善。 引用axios模块），
-模拟数据可以在Easy Mock http://easy-mock.com/login生成（此网站无跨域问题，直接请求即可）
+模拟数据可以在Easy Mock http://easy-mock.com/login 生成（此网站无跨域问题，直接请求即可）
 
 2. 项目生成时安装了eslint检查，如果不需要，可在.eslintrc.js中注释 ~~extends: 'standard'~~
 
