@@ -63,7 +63,7 @@ vue2.x + vue-router + vues + es6 + axios + webpack
 
 2. 项目生成时安装了eslint检查，如果不需要，可在.eslintrc.js中注释 ~~extends: 'standard'~~
 
-3. 模块划分应该在总路由完成（暂时没写上去），这样打包压缩会把资源按模块分类
+3. 模块划分（webpack懒加载）应该在总路由完成（暂时没写上去），这样打包压缩会把资源按模块分类
 
 
 
