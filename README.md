@@ -72,7 +72,9 @@ vue-cli + vue2.x + vue-router + vuex + es6 + axios + webpack
 vue chrome插件（非常好用，可时间穿梭，查看vuex变化，可通过component查看结构等）：vue.js devtools
 
 基于vue2.0的组件库：http://element.eleme.io/#/zh-CN
+
 饿了么：https://github.com/bailicangdu/vue2-elm
+
 github Vue大集合：https://github.com/opendigg/awesome-github-vue#UI%E7%BB%84%E4%BB%B6
 
 
