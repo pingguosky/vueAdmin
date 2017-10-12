@@ -1,0 +1,14 @@
+.app-wrapper .main-container {
+  min-height: 100%;
+  -webkit-transition: margin-left 0.28s ease-out;
+  transition: margin-left 0.28s ease-out;
+  margin-left: 180px;
+}
+.el-menu.navbar{
+  height: 50px;
+  padding-left: 20px;
+}
+.el-menu.navbar > *{
+  display: inline-block;
+  line-height: 50px;
+}
