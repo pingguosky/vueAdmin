@@ -50,6 +50,5 @@ vue2.x + vue-router + vues + es6 + axios + webpack
 ├── .postcssrc.js        // 预先设置css规则
 ├── index.html            // 入口html文件
 ├── package.json       // 项目描述和配置
-、、、
 
 
