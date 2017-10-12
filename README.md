@@ -1,7 +1,10 @@
 ## 技术栈
-vue2.x + vue-router + vues + es6 + axios + webpack
+vue-cli + vue2.x + vue-router + vuex + es6 + axios + webpack
 
-## 结构搭建（可忽略）
+#### es6/es7
+项目涉及大量es6，es7 async await之后更新也会引入
+
+## vue-cli构建（可忽略）
 安装vue-cli：npm install -g vue-cli（npm有时候部分模块下载不了，用cnpm淘宝镜像效果更佳）
 
 检测安装成功：vue -V
@@ -64,6 +67,10 @@ vue2.x + vue-router + vues + es6 + axios + webpack
 2. 项目生成时安装了eslint检查，如果不需要，可在.eslintrc.js中注释 ~~extends: 'standard'~~
 
 3. 模块划分（webpack懒加载）应该在总路由完成（暂时没写上去），这样打包压缩会把资源按模块分类
+
+### 资料参考
+vue chrome插件（非常）：vue.js devtools
+
 
 
 
