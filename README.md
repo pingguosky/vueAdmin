@@ -25,30 +25,35 @@ vue2.x + vue-router + vues + es6 + axios + webpack
 ## 目录结构
 ```
 ├── build                       // webpack配置相关
-├── config                    // 配置、项目打包路径
+├── config                      // 配置、项目打包路径
 ├── src                         // 源代码
-│   ├── api    // 所有接口请求
-│   ├── assects    // 图片、字体等静态资源
-│   ├── components    // 全局共用组件
-│   ├── directive    // 全局指令
-│   ├── filter    // 全局过滤
-│   ├── store       // vuex的状态管理 
-│   │   ├── getters.js  // 配置getters（vuex的计算属性） 
-│   │   ├── index.js    // vuex模块入口   
-│   ├── utils             // 全局共用方法
-│   │   ├── fetch.js    // 获取数据    
+│   ├── api                     // 所有接口请求
+│   ├── assects                 // 图片、字体等静态资源
+│   ├── components              // 全局共用组件
+│   ├── directive               // 全局指令
+│   ├── filter                  // 全局过滤
+│   ├── store                   // vuex的状态管理 
+│   │   ├── getters.js          // 配置getters（vuex的计算属性） 
+│   │   ├── index.js            // vuex模块入口   
+│   ├── utils                   // 全局共用方法
+│   │   ├── fetch.js            // 获取数据    
 │   ├── style            
-│   │   ├── index.scss    // 全局样式入口（引入sidebar、mixin、btn）
-│   │   ├──  mixin.scss    // 样式配置         
-├── node_modules      // 项目依赖的node模块  
-├── static                    // 第三方打包资源
-├── .bablelrc              // babel-loader配置（可将es6转为es5）
-├── .editorconfig       // 编辑器使用配置 
-├── .eslintignore        // 代码检查设置忽略文件（不作风格检查）
-├── .eslintrc.js            // eslint配置项
-├── .gitignore             // git忽略项
-├── .postcssrc.js        // 预先设置css规则
-├── index.html            // 入口html文件
-├── package.json       // 项目描述和配置
+│   │   ├── index.scss          // 全局样式入口（引入sidebar、mixin、btn）
+│   │   ├──  mixin.scss         // 样式配置         
+├── node_modules                // 项目依赖的node模块  
+├── static                      // 第三方打包资源
+├── .bablelrc                   // babel-loader配置（可将es6转为es5）
+├── .editorconfig               // 编辑器使用配置 
+├── .eslintignore               // 代码检查设置忽略文件（不作风格检查）
+├── .eslintrc.js                // eslint配置项
+├── .gitignore                  // git忽略项
+├── .postcssrc.js               // 预先设置css规则
+├── index.html                  // 入口html文件
+├── package.json                // 项目描述和配置
+
+axios —— 基于 Promise 的 HTTP 请求客户端，可同时在浏览器和 Node.js 中使用。这里在utils中封装fetch.js（引用axios模块），数据可以在Easy Mock http://easy-mock.com/login生成（此网站无跨域问题，直接请求即可）
+
+
+
 
 
