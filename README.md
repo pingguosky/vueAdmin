@@ -4,7 +4,7 @@ vue-cli + vue2.x + vue-router + vuex + es6 + axios + webpack
 #### es6/es7
 项目涉及大量es6，es7 async await之后更新也会引入
 
-## vue-cli构建（可忽略）
+#### vue-cli构建（可忽略）
 安装vue-cli：npm install -g vue-cli（npm有时候部分模块下载不了，用cnpm淘宝镜像效果更佳）
 
 检测安装成功：vue -V
@@ -25,7 +25,7 @@ vue-cli + vue2.x + vue-router + vuex + es6 + axios + webpack
 
 启动应用：npm run dev（可在pageage.json里配置）
 
-## vuex
+#### vuex
 * 每次修改状态都要通过vuex的Mutations提交，Mutations方法名官方建议大写
 * vuex状态管理暂时按功能划分，也可全局设置
 * 注：通过mutations可以清晰的看到状态是怎么变的，可预测
