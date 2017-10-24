@@ -1,5 +1,5 @@
 <template>
-  <el-menu mode="vertical" :default-active="$route.path">
+  <el-menu mode="vertical" theme="dark" :default-active="$route.path">
     <sidebar-item :routes="routes"></sidebar-item>
   </el-menu>
 </template>
@@ -23,3 +23,4 @@
     min-height: 100%;
   }
 </style>
+

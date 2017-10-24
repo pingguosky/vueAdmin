@@ -5,7 +5,7 @@ import Layout from '@/views/layout/Layout'
 import usermana from '@/views/usermana/usermana'
 import admana from '@/views/admana/admana'
 import testmana from '@/views/testmana/testmana'
-import Login from '@/views/login/login'
+// import Login from '@/views/login/login'
 
 import {fetch} from '@/utils/local'
 
@@ -23,6 +23,7 @@ const constantRouterMap = new Router({
     {
       path: '/usermana',
       component: Layout,
+      icon: 'user',
       noDropdown: true,
       children: [
         {path: 'index', name: '用户管理', component: usermana}
@@ -31,6 +32,7 @@ const constantRouterMap = new Router({
     {
       path: '/admana',
       component: Layout,
+      icon: 'drag',
       noDropdown: true,
       children: [
         {path: 'index', name: '广告配置', component: admana}
@@ -39,9 +41,19 @@ const constantRouterMap = new Router({
     {
       path: '/testmana',
       component: Layout,
+      icon: 'el-icon-picture',
       noDropdown: true,
       children: [
         {path: 'index', name: '测试机管理', component: testmana}
+      ]
+    },
+    {
+      path: '/测试',
+      component: Layout,
+      name: 'Test',
+      icon: 'el-icon-picture',
+      children: [
+        {path: 'index', name: '测试子目录', icon: 'table'}
       ]
     },
     // {

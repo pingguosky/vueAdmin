@@ -32,7 +32,6 @@
   }
 </script>
 <style lang="scss" scoped>
-  /*@import "../../style/mixin.scss";*/
   @import "src/style/mixin.scss";
   .app-wrapper {
     @include clearfix;
