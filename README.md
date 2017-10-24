@@ -75,11 +75,11 @@ resolve: {
 import sideBar from '@/components/sideBar'
 ```
 
+#### 7.2 项目生成时安装了eslint检查，如果不需要，可在.eslintrc.js中注释 ~~extends: 'standard'~~
+
 ### 8 说明
 1. axios —— 基于 Promise 的 HTTP 请求客户端，可同时在浏览器和 Node.js 中使用。这里在utils中封装fetch.js（这个js暂时没写，后期完善。 引用axios模块），
 模拟数据可以在Easy Mock http://easy-mock.com/login 生成（此网站无跨域问题，直接请求即可）
-
-2. 项目生成时安装了eslint检查，如果不需要，可在.eslintrc.js中注释 ~~extends: 'standard'~~
 
 2. 模块划分（webpack懒加载）应该在总路由完成（暂时没写上去），这样打包压缩会把资源按模块分类
 
