@@ -7,7 +7,6 @@ import locale from 'element-ui/lib/locale/lang/en'
 import App from './App'
 import store from './store'
 import router from './router'
-import '@/assets/icons' // icon
 
 Vue.use(ElementUI, { locale })
 

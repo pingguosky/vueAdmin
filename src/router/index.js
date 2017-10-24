@@ -23,7 +23,7 @@ const constantRouterMap = new Router({
     {
       path: '/usermana',
       component: Layout,
-      icon: 'user',
+      icon: 'el-icon-star-on',
       noDropdown: true,
       children: [
         {path: 'index', name: '用户管理', component: usermana}
@@ -32,7 +32,7 @@ const constantRouterMap = new Router({
     {
       path: '/admana',
       component: Layout,
-      icon: 'drag',
+      icon: 'el-icon-picture',
       noDropdown: true,
       children: [
         {path: 'index', name: '广告配置', component: admana}
@@ -41,7 +41,7 @@ const constantRouterMap = new Router({
     {
       path: '/testmana',
       component: Layout,
-      icon: 'el-icon-picture',
+      icon: 'el-icon-plus',
       noDropdown: true,
       children: [
         {path: 'index', name: '测试机管理', component: testmana}
@@ -51,9 +51,9 @@ const constantRouterMap = new Router({
       path: '/测试',
       component: Layout,
       name: 'Test',
-      icon: 'el-icon-picture',
+      icon: 'el-icon-document',
       children: [
-        {path: 'index', name: '测试子目录', icon: 'table'}
+        {path: 'index', name: '测试子目录', icon: 'el-icon-message'}
       ]
     },
     // {
