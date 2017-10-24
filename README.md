@@ -14,13 +14,13 @@ vue-cli + vue2.x + vue-router + vuex + es6 + axios + webpack
 相关配置可按需求配置
 
     Install vue-router?    Yes
-    
+
     Use EsLint to lint your code?(Y/n)    Yes
-    
+
     Setup unit tests with Karma + Mocha?  要不要做测试  No
-    
+
     Setup e2e tests with Nightwatch? No
-    
+
 安装第三方依赖：进入test_admin目录，命令：npm install
 
 启动应用：npm run dev（可在pageage.json里配置）
@@ -40,18 +40,18 @@ vue-cli + vue2.x + vue-router + vuex + es6 + axios + webpack
 │   ├── components              // 全局共用组件
 │   ├── directive               // 全局指令
 │   ├── filter                  // 全局过滤
-│   ├── store                   // vuex的状态管理 
-│   │   ├── getters.js          // 配置getters（vuex的计算属性） 
-│   │   ├── index.js            // vuex模块入口   
+│   ├── store                   // vuex的状态管理
+│   │   ├── getters.js          // 配置getters（vuex的计算属性）
+│   │   ├── index.js            // vuex模块入口
 │   ├── utils                   // 全局共用方法
-│   │   ├── fetch.js            // 获取数据    
-│   ├── style            
+│   │   ├── fetch.js            // 获取数据
+│   ├── style
 │   │   ├── index.scss          // 全局样式入口（引入sidebar、mixin、btn）
-│   │   ├──  mixin.scss         // 样式配置         
-├── node_modules                // 项目依赖的node模块  
+│   │   ├──  mixin.scss         // 样式配置
+├── node_modules                // 项目依赖的node模块
 ├── static                      // 第三方打包资源
 ├── .bablelrc                   // babel-loader配置（可将es6转为es5）
-├── .editorconfig               // 编辑器使用配置 
+├── .editorconfig               // 编辑器使用配置
 ├── .eslintignore               // 代码检查设置忽略文件（不作风格检查）
 ├── .eslintrc.js                // eslint配置项
 ├── .gitignore                  // git忽略项
@@ -76,6 +76,8 @@ vue chrome插件（非常好用，可时间穿梭，查看vuex变化，可通过
 饿了么：https://github.com/bailicangdu/vue2-elm
 
 github Vue大集合：https://github.com/opendigg/awesome-github-vue#UI%E7%BB%84%E4%BB%B6
+
+vue组件库：http://element.eleme.io/#/zh-CN
 
 
 
