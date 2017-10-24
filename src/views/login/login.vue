@@ -14,6 +14,7 @@
 
 <script>
   import {save} from '@/utils/local'
+  import {login} from '@/api/login'
   export default {
     name: 'login',
     data () {
@@ -31,6 +32,11 @@
           })
         }
       }
+    },
+    created () {
+      login('aa', 'bb').then(response => {
+        console.log(response.data, 'login success')
+      })
     }
   }
 </script>
