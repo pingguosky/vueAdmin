@@ -1,4 +1,4 @@
-## 1 技术栈
+### 1 技术栈
 vue-cli + vue2.x + vue-router + vuex + es6 + axios + webpack
 
 #### 2 es6/es7
@@ -25,12 +25,12 @@ vue-cli + vue2.x + vue-router + vuex + es6 + axios + webpack
 
 启动应用：npm run dev（可在pageage.json里配置）
 
-#### 4 vuex
+### 4 vuex
 * 每次修改状态都要通过vuex的Mutations提交，Mutations方法名官方建议大写
 * vuex状态管理暂时按功能划分，也可全局设置
 * 注：通过mutations可以清晰的看到状态是怎么变的，可预测
 
-## 5 目录结构
+### 5 目录结构
 ```
 ├── build                       // webpack配置相关
 ├── config                      // 配置、项目打包路径
@@ -60,17 +60,30 @@ vue-cli + vue2.x + vue-router + vuex + es6 + axios + webpack
 ├── package.json                // 项目描述和配置
 ```
 
-## 6 代码相关
+### 6 代码相关
 
-## 7 说明
+### 7 配置相关
+#### 7.1 配置项webpack.base.conf.js - alias代码指向
+当引用文件的时候为了简化引用，需要使用alias
+```
+resolve: {
+  alias: {
+    '@': resolve('src')
+  }
+}
+// 使用
+import sideBar from '@/components/stickTop'
+```
+
+### 8 说明
 1. axios —— 基于 Promise 的 HTTP 请求客户端，可同时在浏览器和 Node.js 中使用。这里在utils中封装fetch.js（这个js暂时没写，后期完善。 引用axios模块），
 模拟数据可以在Easy Mock http://easy-mock.com/login 生成（此网站无跨域问题，直接请求即可）
 
 2. 项目生成时安装了eslint检查，如果不需要，可在.eslintrc.js中注释 ~~extends: 'standard'~~
 
-3. 模块划分（webpack懒加载）应该在总路由完成（暂时没写上去），这样打包压缩会把资源按模块分类
+2. 模块划分（webpack懒加载）应该在总路由完成（暂时没写上去），这样打包压缩会把资源按模块分类
 
-### 8 资料参考
+### 9 资料参考
 vue chrome插件（非常好用，可时间穿梭，查看vuex变化，可通过component查看结构等）：vue.js devtools
 
 基于vue2.0的组件库：http://element.eleme.io/#/zh-CN
