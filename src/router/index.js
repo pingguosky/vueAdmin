@@ -17,37 +17,39 @@ const constantRouterMap = new Router({
     {
       path: '/',
       component: Layout,
-      name: '首页'
+      name: '首页',
+      hidden: true
     },
     {
       path: '/usermana',
       component: Layout,
-      name: '用户管理',
+      noDropdown: true,
       children: [
-        {path: 'index', component: usermana}
+        {path: 'index', name: '用户管理', component: usermana}
       ]
     },
     {
       path: '/admana',
       component: Layout,
-      name: '广告配置',
+      noDropdown: true,
       children: [
-        {path: 'index', component: admana}
+        {path: 'index', name: '广告配置', component: admana}
       ]
     },
     {
       path: '/testmana',
       component: Layout,
-      name: '测试机管理',
+      noDropdown: true,
       children: [
-        {path: 'index', component: testmana}
+        {path: 'index', name: '测试机管理', component: testmana}
       ]
     },
-    {
-      path: '/login',
-      component: Login,
-      name: '登录'
-    }
+    // {
+    //   path: '/login',
+    //   component: Login,
+    //   name: '登录'
+    // },
+    { path: '*', redirect: '/404', hidden: true }
   ]
 })
 
@@ -66,5 +68,4 @@ constantRouterMap.beforeEach((to, from, next) => {
     }
   }
 })
-
 export default constantRouterMap

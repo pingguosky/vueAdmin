@@ -1,19 +1,25 @@
 <template>
-  <ul class="el-menu sidebar-container el-menu--dark">
-      <router-link class="el-submenu__title" :to="{path:'/usermana/index'}" tag="li">用户管理</router-link>
-      <router-link class="el-submenu__title" :to="{path:'/admana/index'}" tag="li">广告配置管理</router-link>
-      <router-link class="el-submenu__title" :to="{path:'/testmana/index'}" tag="li">测试机管理</router-link>
-  </ul>
+  <el-menu mode="vertical" :default-active="$route.path">
+    <sidebar-item :routes="routes"></sidebar-item>
+  </el-menu>
 </template>
 
 <script>
-//  import SidebarItem from './SidebarItem'
-//  export default {
-//    component: {
-//      SidebarItem
-//    }
-//  }
+  import SidebarItem from './SidebarItem'
+  export default {
+    components: {
+      SidebarItem
+    },
+    computed: {
+      routes () {
+        return this.$router.options.routes    // 路由列表
+      }
+    }
+  }
 </script>
-<style>
 
+<style lang="scss" scoped>
+  .el-menu {
+    min-height: 100%;
+  }
 </style>
