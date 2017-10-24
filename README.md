@@ -1,10 +1,10 @@
 ### 1 技术栈
 vue-cli + vue2.x + vue-router + vuex + es6 + axios + webpack
 
-#### 2 es6/es7
+### 2 es6/es7
 项目涉及大量es6，es7 async await之后更新也会引入
 
-#### 3 vue-cli构建（可忽略）
+### 3 vue-cli构建（可忽略）
 安装vue-cli：npm install -g vue-cli（npm有时候部分模块下载不了，npm install -g vue-cli --registry=https://registry.npm.taobao.org）
 
 检测安装成功：vue -V
