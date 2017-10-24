@@ -72,7 +72,7 @@ resolve: {
   }
 }
 // 使用
-import sideBar from '@/components/stickTop'
+import sideBar from '@/components/sideBar'
 ```
 
 ### 8 说明
