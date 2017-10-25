@@ -94,5 +94,7 @@ github Vue大集合：https://github.com/opendigg/awesome-github-vue#UI%E7%BB%84
 
 vue组件库：http://element.eleme.io/#/zh-CN
 
+> 代码部分文档参考READ.me-code
+
 
 
