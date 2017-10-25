@@ -1,10 +1,10 @@
 <template>
-  <div>广告配置管理</div>
+  <div>阿富汗</div>
 </template>
 
 <script>
     export default {}
 </script>
-<style>
+<style lang="scss" scoped>
 
 </style>

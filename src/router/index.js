@@ -3,7 +3,8 @@ import Router from 'vue-router'
 import Layout from '@/views/layout/Layout'
 
 import usermana from '@/views/usermana/usermana'
-import admana from '@/views/admana/admana'
+import ae from '@/views/admana/ae'
+import af from '@/views/admana/af'
 import testmana from '@/views/testmana/testmana'
 // import Login from '@/views/login/login'
 
@@ -32,10 +33,11 @@ const constantRouterMap = new Router({
     {
       path: '/admana',
       component: Layout,
+      name: '广告配置',
       icon: 'el-icon-picture',
-      noDropdown: true,
       children: [
-        {path: 'index', name: '广告配置', component: admana}
+        {path: 'ae', name: '阿联酋', component: ae},
+        {path: 'af', name: '阿富汗', component: af}
       ]
     },
     {
@@ -45,15 +47,6 @@ const constantRouterMap = new Router({
       noDropdown: true,
       children: [
         {path: 'index', name: '测试机管理', component: testmana}
-      ]
-    },
-    {
-      path: '/测试',
-      component: Layout,
-      name: 'Test',
-      icon: 'el-icon-document',
-      children: [
-        {path: 'index', name: '测试子目录', icon: 'el-icon-message'}
       ]
     },
     // {

@@ -1,4 +1,3 @@
 export default {
-  sidebar: state => state.app.sidebar,
-  permission_routers: state => state.permission.routers
+  sidebar: state => state.app.sidebar
 }

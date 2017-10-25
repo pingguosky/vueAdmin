@@ -1,27 +1,23 @@
-const user = {
+import Cookies from 'js-cookie'
+export default {
   state: {
-    user: '',
-    status: ''
+    sidebar: {
+      opened: !+Cookies.get('sidebarStatus')
+    }
   },
   mutations: {
-    SET_CODE (state, code) {
-      state.code = code
-    },
-    SET_TOKEN (state, token) {
-      state.token = token
+    TOGGLE_SIDEBAR: state => {
+      if (state.sidebar.opened) {
+        Cookies.set('sidebarStatus', 1)
+      } else {
+        Cookies.set('sidebarStatus', 0)
+      }
+      state.sidebar.opened = !state.sidebar.opened
     }
   },
   actions: {
-    // 用户名登录
-    LoginByUsername ({commit}, userInfo) {
-    },
-    // 获取用户信息
-    GetUserInfo ({commit, state}) {
-    },
-    // 登出
-    LogOut ({ commit, state }) {
+    ToggleSideBar: ({ commit }) => {
+      commit('TOGGLE_SIDEBAR')
     }
   }
 }
-
-export default user
