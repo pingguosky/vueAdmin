@@ -1,3 +1,4 @@
+// 一个轻量的JavaScript库来处理cookie
 import Cookies from 'js-cookie'
 
 const TokenKey = 'Admin-Token'

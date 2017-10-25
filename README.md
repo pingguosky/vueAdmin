@@ -45,9 +45,11 @@ vue-cli + vue2.x + vue-router + vuex + es6 + axios + webpack
 │   │   ├── index.js            // vuex模块入口
 │   ├── utils                   // 全局共用方法
 │   │   ├── fetch.js            // 获取数据
-│   ├── style
-│   │   ├── index.scss          // 全局样式入口（引入sidebar、mixin、btn）
-│   │   ├──  mixin.scss         // 样式配置
+│   ├── style                   // 全局样式
+│   │   ├── index.scss          // 全局样式入口（引入sidebar、mixin、btn等）
+│   │   ├── mixin.scss          // 样式配置
+│   ├── views                   // 视图
+│   │   ├── layout              // 框架结构
 ├── node_modules                // 项目依赖的node模块
 ├── static                      // 第三方打包资源
 ├── .bablelrc                   // babel-loader配置（可将es6转为es5）

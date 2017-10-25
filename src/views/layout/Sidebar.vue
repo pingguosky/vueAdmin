@@ -1,4 +1,5 @@
 <template>
+  <!-- :default-active是element-ui提供让选中菜单高亮 -->
   <el-menu mode="vertical" theme="dark" :default-active="$route.path">
     <sidebar-item :routes="routes"></sidebar-item>
   </el-menu>
